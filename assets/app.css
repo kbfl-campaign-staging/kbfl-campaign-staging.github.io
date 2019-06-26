@@ -110,10 +110,10 @@ p, .control-label {
 }
 
 /* iOS-intro */
-body:not(.iOSintroPending) div.container.iOSintro, body.iOSintroPending div.container.mainform {
+div.container.mainform.introPending, div.container.iOSintro {
   display: none;
 }
-body:not(.iOSintroPending) div.container.mainform, body.iOSintroPending div.container.iOSintro {
+div.container.mainform, div.container.iOSintro.introPending {
   display: block;
 }
 

@@ -383,9 +383,9 @@ $(".resetSign").on('click', voterRegistration.resetSign);
 
 var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 if (iOS) {
-	$("body").addClass("iOSintroPending");
+	$("formAndIntroContainer").addClass("introPending");
 }
 
 $(".iOSintroNext").on('click', ()=>{
-	$("body").removeClass("iOSintroPending");
+	$("formAndIntroContainer").removeClass("introPending");
 });
